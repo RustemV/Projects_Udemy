@@ -20,6 +20,11 @@ delete options.name; */
 
 console.log(options['colors']['border']);
 
+const {border, bg} = options.colors;
+
+console.log(border);
+console.log(bg);
+
 let counter = 0;
 for (let key in options) {
         counter++;
