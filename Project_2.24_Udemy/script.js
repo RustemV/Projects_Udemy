@@ -31,6 +31,8 @@ let personalMovieDB = {
     },
     detectPersonalLevel: function() {
         personalMovieDB.count = +prompt('Сколько фильмов Вы уже посмотрели?', '');
+    }
+}
 
 let cnt = personalMovieDB.count;
 if (cnt < 10) {
@@ -41,20 +43,11 @@ if (cnt < 10) {
     alert('классика');
 } else {
     alert('ошибка'); 
-} */
+}
     }
 };
 
-for (let i = 1; i <= 2; i++) {
-    do {
-        //aa = '';
-        aa = prompt('Один из последних просмотренных фильмов?', '');
-    } while ((aa == '') || aa == null || (aa.length > 50));
-    do {
-        //bb = '';
-        bb = prompt('На сколько оцените его?', '');
-    } while (bb == '' || bb == null)
-    personalMovieDB.movies[aa] = bb;
+
 
 /* 2) Создать метод toggleVisibleMyDB, который при вызове будет проверять свойство privat. Если оно false - он
 переключает его в true, если true - переключает в false. Протестировать вместе с showMyDB.
